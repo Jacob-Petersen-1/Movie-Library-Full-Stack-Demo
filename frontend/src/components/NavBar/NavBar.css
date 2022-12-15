@@ -1,35 +1,90 @@
-ul {
+.navbarContainer{
+  height: 75px;
+  width: 100%;
+  background-color: #232629;
+  display:flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+.logo{
+  font-size: 24px;
+  margin-left: 25px;
+  font-weight: bold;
+  font-family:Arial;
+  color: rgb(172, 23, 23);
+  cursor:pointer;
+}
+
+.navbarLeft{
+  flex: 3;
+}
+
+.searchbar{
+  width: 100%;
+  height:30px;
+  background-color: white;
+  border-radius: 30px;
   display: flex;
-  justify-content: space-between;
-  list-style-type: none;
+  align-items: center;
 }
 
-li {
-  font-size: 1.25rem;
+.searchIcon{
+  font-size: 20px !important;
+  margin-left: 15px;
 }
 
-.navBar {
-  background: steelblue;
-  box-shadow: 4px 2px 5px gray;
-  color: white;
-  margin-bottom: 2rem;
-  padding: 1.5rem 2rem;
+.navbarIconItem{
+  display: flex;
 }
 
-.navBar button {
-  background: transparent;
-  border: 2px solid white;
-  color: white;
-  padding: 0.4rem 0.5rem;
-}
-
-.navBar button:hover {
-  background: white;
-  color: steelblue;
+.navbarIconItem{
+  margin-right: 5px;
   cursor: pointer;
+  position: relative;
 }
 
-.brand {
-  cursor: pointer;
-  font-size: 2rem;
+.navbarIconBadge{
+  background-color:crimson;
+  font-weight: bolder;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.searchInput{
+  border: none;
+  width: 70%;
+
+}
+
+.navbarCenter{
+  flex: 5;
+}
+
+.navbarRight{
+  flex: 4;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+}
+
+.navbarImg{
+  width:32px;
+  height:32px;
+}
+
+.navbarLinks{
+  margin-right: 20px;
+  font-size: 14px;
+  cursor:pointer;
 }
