@@ -14,7 +14,7 @@ const HomePage = () => {
   const [user, token] = useAuth();
   const [movies, setMovies] = useState([]);
 
-
+//Function to retrieve the Data
   const fetchMovieData = async () => {
     try {
       let response = await axios.get(
@@ -27,9 +27,14 @@ const HomePage = () => {
     }
   };
 
+
+  //Fetching Movie Data
   useEffect(() => {
     fetchMovieData();
   }, []);
+
+
+
   return (
     <div className="container">
       <h1>Home Page for {user.username}!</h1>
