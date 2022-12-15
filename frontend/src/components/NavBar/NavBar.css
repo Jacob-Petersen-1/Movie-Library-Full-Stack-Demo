@@ -71,7 +71,7 @@
 }
 
 .navbarRight{
-  flex: 4;
+  flex: 3;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -87,4 +87,5 @@
   margin-right: 20px;
   font-size: 14px;
   cursor:pointer;
+  text-decoration: none;
 }

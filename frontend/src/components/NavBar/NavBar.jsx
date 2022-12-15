@@ -2,14 +2,7 @@ import React from "react";
 import { useContext } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import AuthContext from "../../context/AuthContext";
-import {
-  Search,
-  Chat,
-  Notifications,
-  Person,
-  Image,
-  Home,
-} from "@material-ui/icons";
+import {Search} from "@material-ui/icons";
 import "./NavBar.css";
 
 const Navbar = () => {
@@ -27,18 +20,7 @@ const Navbar = () => {
         </div>
       </div>
       <div className="navbarRight">
-        <div className="navbarLinks">
-          <Link to="/">
-            <Home />
-          </Link>
-        </div>
 
-        <div className="navbarIcons">
-          <div className="navbarIconItem">
-            <Notifications />
-            <span className="navbarIconBadge">3</span>
-          </div>
-        </div>
         {user ? (
           <button onClick={logoutUser}>Logout</button>
         ) : (
