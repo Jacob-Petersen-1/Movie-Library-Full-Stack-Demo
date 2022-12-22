@@ -1,6 +1,6 @@
-import { UndoRounded } from "@material-ui/icons";
+
 import axios from "axios";
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 
 const ReviewCard = ({ movieID }) => {
   const [reviews, setReviews] = useState([]);

@@ -42,10 +42,8 @@ const HomePage = () => {
   return (
     <div className="container">
       <h1>Home Page for {user.username}!</h1>
-      
-      
-      
-      <MovieFeed movies={movies}/>
+
+      {/* <MovieFeed movies={movies}/> */}
     </div>
   );
 };
