@@ -2,6 +2,7 @@ import React from "react";
 import { useEffect, useState } from "react";
 import useAuth from "../../hooks/useAuth";
 import { KEY } from "../../localKey"
+import { data } from "../../data" 
 import axios from "axios";
 
 //components
@@ -28,6 +29,9 @@ const HomePage = () => {
   };
 
 
+
+
+
   //Fetching Movie Data
   useEffect(() => {
     fetchMovieData();
@@ -38,6 +42,9 @@ const HomePage = () => {
   return (
     <div className="container">
       <h1>Home Page for {user.username}!</h1>
+      
+      
+      
       <MovieFeed movies={movies}/>
     </div>
   );
