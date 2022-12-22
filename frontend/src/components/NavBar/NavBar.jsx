@@ -2,7 +2,6 @@ import React from "react";
 import { useContext } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import AuthContext from "../../context/AuthContext";
-import {Search} from "@material-ui/icons";
 import "./NavBar.css";
 
 const Navbar = () => {
@@ -11,13 +10,9 @@ const Navbar = () => {
   return (
     <div className="navbarContainer">
       <div className="navbarLeft">
-        <span className="logo">Movie Review 🎬</span>
+        <span className="logo">Movie Blog</span>
       </div>
       <div className="navbarCenter">
-        <div className="searchbar">
-          <Search className="searchIcon" />
-          <input placeholder="Search" className="searchInput" />
-        </div>
       </div>
       <div className="navbarRight">
 

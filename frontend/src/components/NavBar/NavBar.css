@@ -9,7 +9,9 @@
 }
 
 .logo{
-  font-size: 24px;
+  font-size: 3rem;
+  text-transform: capitalize;
+  text-shadow: 1px 2px 2px rgb(143, 37, 37), 2px 2px 2px black;
   margin-left: 25px;
   font-weight: bold;
   font-family:Arial;
@@ -71,7 +73,7 @@
 }
 
 .navbarRight{
-  flex: 3;
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: space-around;
