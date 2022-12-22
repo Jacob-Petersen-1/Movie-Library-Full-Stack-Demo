@@ -27,6 +27,7 @@ function App() {
             </PrivateRoute>
           }
         />
+        <Route path="/details/:imdbId"/>
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/login" element={<LoginPage />} />
       </Routes>
