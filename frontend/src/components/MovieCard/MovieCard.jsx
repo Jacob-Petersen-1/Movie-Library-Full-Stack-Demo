@@ -18,7 +18,6 @@ const MovieCard = ({movie}) => {
             <Link to={`/details/${movie.imdbID}`}>
             <h1>{movie.Title}</h1>
             <img src={movie.Poster}/>
-
             </Link>
             <div className='container-movie-card'>
                 <ReviewCard movieID ={movie.imdbID} />

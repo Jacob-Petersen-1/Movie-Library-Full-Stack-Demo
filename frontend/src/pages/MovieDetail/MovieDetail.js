@@ -2,8 +2,11 @@ import React from 'react';
 
 
 const MovieDetailPage = () => {
-    return ( 
-        <h1>Movie Detail</h1>
+    return (
+        <div className='container'>
+            <h1>Movie Detail</h1>
+
+        </div> 
      );
 
 }
